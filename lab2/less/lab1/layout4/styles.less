@@ -1,0 +1,165 @@
+@main-bg: #5844b1;
+@secondary-bg: #5844b127;
+@primary-color: #352a64;
+@secondary-color: #504f4f;
+@tertiary-color: #352a648e;
+@font-family: 'Roboto', serif;
+@white: #ffffff;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.header {
+  background-color: @main-bg;
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px 0;
+
+  .site-logo {
+    font-size: 25px;
+    color: @white;
+
+    h1 {
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    }
+  }
+}
+
+.main {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  margin-top: 20px;
+
+  .ins {
+    width: 75%;
+  }
+
+  .ins-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .product-image--more {
+    width: 40%;
+    display: flex;
+    gap: 0;
+    float: left;
+    margin-left: 10px;
+
+    img {
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+      width: 50%;
+      margin-left: 10px;
+    }
+  }
+
+  .product-image {
+    width: 40%;
+    display: inline-block;
+    margin: 20px 0 15px 10px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-left: 10px;
+    }
+  }
+
+  .product-content {
+    width: 55%;
+    padding: 0 25px;
+    float: right;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    .product-title {
+      font-size: 26px;
+      color: @primary-color;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .product-description {
+      line-height: 1.6;
+      color: @secondary-color;
+      font-size: 18px;
+      font-family: @font-family;
+    }
+
+    .product-author {
+      font-style: italic;
+      font-size: 16px;
+      color: @tertiary-color;
+    }
+  }
+}
+
+.sidebar {
+  background-color: @secondary-bg;
+  padding: 20px;
+  width: 22%;
+  margin-top: -20px;
+  padding-top: 35px;
+
+  .left-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .left-title {
+      color: @primary-color;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .left-description {
+      line-height: 1.5;
+      color: @secondary-color;
+      font-family: @font-family;
+      font-size: 15px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+
+    .ins,
+    .sidebar {
+      width: 100%;
+      border-left: none;
+      margin-top: 20px;
+    }
+
+    .product-image,
+    .product-image--more {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+
+    .product-content {
+      float: none;
+      width: 100%;
+      padding: 0 15px;
+    }
+  }
+}

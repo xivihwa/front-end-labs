@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+html {
+  height: 100%;
+  background-color: #fafafa;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  height: 100%;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5844b1;
+  padding: 15px 30px;
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.register {
+  margin-top: 20px;
+  color: #ffffff;
+  font-size: 16px;
+  border: none;
+  background-color: #8468ff;
+  border-radius: 5px;
+  padding: 12px 25px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.register:hover {
+  background-color: #1f193a;
+}
+.main {
+  padding: 60px 50px;
+}
+.news {
+  display: grid;
+  gap: 30px;
+  margin-bottom: 50px;
+  grid-template-columns: 1fr 1fr;
+}
+.news .info-content {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.product-description {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+.product-title {
+  margin-bottom: 20px;
+  font-size: 36px;
+  color: #333;
+  font-weight: bold;
+}
+.product-image img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+  background-color: #ffffff;
+  padding: 40px 30px;
+  margin-bottom: 50px;
+  background-image: url('./images/fon.jpg');
+  border-radius: 8px;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.features .register {
+  width: 200px;
+  padding: 15px 30px;
+  font-size: 18px;
+  margin-top: 20px;
+}
+.benefits-list {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.benefits-list .feature-card {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+}
+.benefits-list .feature-card .feature-title {
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.benefits-list .feature-card .features-description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+.guide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 50px 30px;
+}
+.guide .guide-list {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.guide .guide-item {
+  display: flex;
+  align-items: center;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+}
+.guide .guide-item .guide-number {
+  margin-right: 20px;
+  font-size: 36px;
+  color: #5844b1;
+  font-weight: bold;
+}
+.guide .guide-item .guide-content {
+  font-size: 16px;
+  color: #444;
+}
+.guide .guide-slogan {
+  font-size: 28px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.footer {
+  margin-top: 10px;
+  padding: 20px 0;
+  background-color: #5844b1;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+.footer .footer-list {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  width: 700px;
+}
+.footer .footer-list .footer-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footer-list .footer-item .footer-link {
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+.footer .footer-list .footer-item .footer-link:hover {
+  opacity: 0.7;
+}
+.footer .header-logo {
+  position: absolute;
+  font-size: 15px;
+  left: 5px;
+  color: #ffffff;
+}
+@media (max-width: 1024px) {
+  .footer .header-logo {
+    font-size: 10px;
+  }
+  .benefits-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .benefits-list {
+    grid-template-columns: 1fr;
+  }
+  .footer-list {
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 10px;
+  }
+  .footer-list .footer-link {
+    font-size: 16px;
+    padding: 10px 0;
+  }
+  .guide-list {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 450px) {
+  .footer-list {
+    width: 100%;
+    gap: 10px;
+    padding: 5px;
+  }
+  .footer-list .footer-link {
+    font-size: 16px;
+    padding: 10px 0;
+  }
+}
