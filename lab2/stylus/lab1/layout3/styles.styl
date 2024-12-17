@@ -1,0 +1,227 @@
+*
+  margin 0
+  box-sizing border-box
+  padding 0
+
+ul
+  list-style none
+
+a
+  text-decoration none
+
+html
+  height 100%
+  background-color #fafafa
+
+body
+  font-family 'Arial', sans-serif
+  height 100%
+
+header
+  display flex
+  justify-content space-between
+  align-items center
+  background-color #5844b1
+  padding 15px 30px
+  color white
+  box-shadow 0 4px 10px rgba(0, 0, 0, 0.1)
+
+.register
+  margin-top 20px
+  color white
+  font-size 16px
+  border none
+  background-color #8468ff
+  border-radius 5px
+  padding 12px 25px
+  transition all 0.3s ease
+  cursor pointer
+
+  &:hover
+    background-color #1f193a
+
+.main
+  padding 60px 50px
+
+.news
+  display grid
+  gap 30px
+  margin-bottom 50px
+  grid-template-columns 1fr 1fr
+
+  .info-content
+    justify-content center
+    display flex
+    flex-direction column
+
+.product-description
+  font-size 18px
+  color #555
+  margin-bottom 30px
+  line-height 1.6
+
+.product-title
+  margin-bottom 20px
+  font-size 36px
+  color #333
+  font-weight bold
+
+.product-image img
+  height 400px
+  width 100%
+  object-fit cover
+  border-radius 8px
+
+.features
+  display flex
+  flex-direction column
+  align-items center
+  color #333
+  background-color #ffffff
+  padding 40px 30px
+  margin-bottom 50px
+  background-image url('./images/fon.jpg')
+  border-radius 8px
+  background-position center
+  background-size cover
+  box-shadow 0 4px 10px rgba(0, 0, 0, 0.1)
+
+  .register
+    width 200px
+    padding 15px 30px
+    font-size 18px
+    margin-top 20px
+
+.benefits-list
+  gap 30px
+  grid-template-columns repeat(3, 1fr)
+  display grid
+
+.feature-title
+  margin-bottom 15px
+  font-size 24px
+  font-weight bold
+
+.feature-card
+  background-color rgba(255, 255, 255, 0.8)
+  border-radius 8px
+  border 1px solid #ccc
+  padding 20px
+  text-align center
+
+.features-description
+  font-size 16px
+  color #666
+  margin-bottom 20px
+  line-height 1.5
+
+.guide
+  align-items center
+  flex-direction column
+  background-color #f9f9f9
+  padding 50px 30px
+  display flex
+
+.guide-item
+  align-items center
+  border 1px solid #ccc
+  border-radius 8px
+  display flex
+  background-color #f0f0f0
+  padding 20px
+
+.guide-list
+  gap 30px
+  grid-template-columns repeat(3, 1fr)
+  display grid
+
+.guide-title
+  margin-bottom 10px
+  font-size 20px
+  font-weight bold
+
+.guide-number
+  margin-right 20px
+  font-size 36px
+  color #5844b1
+  font-weight bold
+
+.guide-content
+  font-size 16px
+  color #444
+
+.guide-slogan
+  font-size 28px
+  margin-bottom 40px
+  text-align center
+
+.footer
+  margin-top 10px
+  padding 20px 0
+  background-color #5844b1
+  display flex
+  justify-content center
+  width 100%
+  height auto
+  position relative
+
+.footer-list
+  gap 20px
+  text-align center
+  grid-template-columns repeat(3, 1fr)
+  width 700px
+  display grid
+
+.footer-item
+  text-align center
+  align-items center
+  display flex
+  justify-content center
+
+.footer .header-logo
+  position absolute
+  font-size 15px
+  left 5px
+  color #ffffff
+
+.footer-link
+  font-family 'Arial', sans-serif
+  font-size 18px
+  transition all 0.3s ease-in-out
+  color #ffffff
+
+  &:hover
+    opacity 0.7
+
+@media (max-width: 1024px)
+  .footer .header-logo
+    font-size 10px
+
+  .benefits-list
+    grid-template-columns repeat(2, 1fr)
+
+@media (max-width: 768px)
+  .benefits-list
+    grid-template-columns 1fr
+
+  .footer-list
+    width 100%
+    gap 10px
+    grid-template-columns 1fr
+
+  .footer-link
+    font-size 16px
+    padding 10px 0
+
+  .guide-list
+    grid-template-columns 1fr
+
+@media (max-width: 450px)
+  .footer-list
+    width 100%
+    gap 10px
+    padding 5px
+
+  .footer-link
+    padding 10px 0
+    font-size 16px
